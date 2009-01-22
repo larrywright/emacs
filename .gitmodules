@@ -1,0 +1,18 @@
+[submodule "vendor/rinari"]
+	path = vendor/rinari
+	url = git://github.com/eschulte/rinari.git
+[submodule "vendor/twilight-emacs"]
+	path = vendor/twilight-emacs
+	url = git://github.com/crafterm/twilight-emacs.git
+[submodule "vendor/magit"]
+	path = vendor/magit
+	url = git://github.com/technomancy/magit.git
+[submodule "vendor/cheat"]
+	path = vendor/cheat
+	url = git://github.com/defunkt/cheat.el.git
+[submodule "vendor/gist"]
+	path = vendor/gist
+	url = git://github.com/defunkt/gist.el.git
+[submodule "vendor/textmate"]
+	path = vendor/textmate
+	url = git://github.com/defunkt/textmate.el.git
