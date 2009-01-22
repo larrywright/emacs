@@ -6,15 +6,10 @@
 
 (when (file-exists-p ".passwords") (load ".passwords"))
 
-(load "config/lisp")
 (load "config/global")
-(load "config/defuns")
-(load "config/bindings")
+(load "config/functions")
 (load "config/modes")
-(load "config/theme")
-(load "config/temp_files")
-(load "config/github")
-(load "config/git")
+;;(load "config/git")
 
 (vendor 'cheat)
 (vendor 'magit)
@@ -22,4 +17,7 @@
 (vendor 'twittering-mode)
 (vendor 'textile-mode)
 (vendor 'textmate)
+(vendor 'color-theme)
+(vendor 'jabber)
 (textmate-mode)
+(load "config/theme")
