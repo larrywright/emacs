@@ -19,5 +19,8 @@
 (vendor 'textmate)
 (vendor 'color-theme)
 (vendor 'jabber)
+(vendor 'yasnippet)
 (textmate-mode)
 (load "config/theme")
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/snippets")
