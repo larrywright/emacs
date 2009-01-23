@@ -20,6 +20,7 @@
 (vendor 'color-theme)
 (vendor 'jabber)
 (vendor 'yasnippet)
+(vendor 'ruby-mode)
 (textmate-mode)
 (load "config/theme")
 (yas/initialize)
