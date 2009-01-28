@@ -4,7 +4,7 @@
   (let* ((file (symbol-name library))
          (normal (concat "~/.emacs.d/vendor/" file))
          (suffix (concat normal ".el"))
-         (defunkt (concat "~/.emacs.d/config/" file)))
+         (config (concat "~/.emacs.d/config/" file)))
     (cond
      ((file-directory-p normal) (add-to-list 'load-path normal) (require library))
      ((file-directory-p suffix) (add-to-list 'load-path suffix) (require library))
