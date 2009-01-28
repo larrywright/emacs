@@ -6,9 +6,11 @@
           (lambda ()
             (define-key rinari-minor-mode-map (kbd "A-r") 'rinari-test)))
 
-; rhtml
-(setq auto-mode-alist (cons '("\\.html\\.erb" . nxml-mode) auto-mode-alist))
 
+; rhtml
+;;(setq auto-mode-alist (cons '("\\.html\\.erb" . nxml-mode) auto-mode-alist))
+(add-hook 'rhtml-mode-hook
+          (lambda () (rinari-launch)))
 ; ruby
 (vendor 'ruby-hacks)
 (setq auto-mode-alist (cons '("Rakefile" . ruby-mode) auto-mode-alist))

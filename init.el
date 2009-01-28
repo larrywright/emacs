@@ -4,11 +4,12 @@
 (setq custom-file "~/.emacs.d/config/custom.el")
 (load custom-file)
 
-(when (file-exists-p ".passwords") (load ".passwords"))
+(when (file-exists-p "~/.emacs.d/.passwords") (load "~/.emacs.d/.passwords"))
 
 (load "config/global")
 (load "config/functions")
 (load "config/modes")
+
 ;;(load "config/git")
 
 (vendor 'cheat)
@@ -21,7 +22,9 @@
 (vendor 'jabber)
 (vendor 'yasnippet)
 (vendor 'ruby-hacks)
+(vendor 'rhtml-mode)
 (textmate-mode)
 (load "config/theme")
+(load "config/jabber")
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/snippets")

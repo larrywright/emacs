@@ -11,3 +11,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  )
+(set-face-font 'default "-outline-Liberation Mono-normal-r-normal-normal-11-97-96-96-c-*-iso8859-1")
+(set-face-font 'bold "-outline-Liberation Mono-bold-r-normal-normal-11-97-96-96-c-*-iso8859-1")
+(set-face-font 'italic "-outline-Liberation Mono-normal-i-normal-normal-11-97-96-96-c-*-iso8859-1")
+(set-face-font 'bold-italic "-outline-Liberation Mono-bold-i-normal-normal-11-97-96-96-c-*-iso8859-1")
