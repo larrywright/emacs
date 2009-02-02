@@ -9,6 +9,7 @@
 (load "config/global")
 (load "config/functions")
 (load "config/modes")
+(load "config/org")
 
 ;;(load "config/git")
 
@@ -19,6 +20,7 @@
 (vendor 'textile-mode)
 (vendor 'textmate)
 (vendor 'color-theme)
+(vendor 'vivid-chalk) 
 (vendor 'jabber)
 (vendor 'yasnippet)
 (vendor 'ruby-hacks)

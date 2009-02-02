@@ -20,6 +20,4 @@
 ;; works in both aquamacs and carbon
 (when (functionp 'tool-bar-mode)
   (tool-bar-mode -1))
-
-(global-set-key (kbd "C-x t") (lambda () (interactive) (find-file-other-frame "~/TODO.txt") (org-mode)))
-
+(scroll-bar-mode nil)
