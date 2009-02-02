@@ -2,3 +2,4 @@
 .passwords
 .DS_Store
 config/custom.el
+*.elc
