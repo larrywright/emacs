@@ -7,3 +7,12 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 (global-set-key (kbd "C-x t") (lambda () (interactive) (find-file-other-frame "~/TODO.txt") (org-mode)))
+(setq org-todo-keyword-faces
+      '(("TODO"      . (:background "darkGreen" :weight bold))
+        ("WAITING"  . (:foreground "yellow" :weight bold))
+        ("DEFER"  . (:foreground "silver"))
+        ("DONE"  . (:foreground "grey"))))
+(setq org-agenda-custom-commands
+      '(("w" occur-tree "WAITING")("d" occur-tree "DELEGATED"))) ;; C-c a w/d will open an agenda with just waiting/delegated items respectively
+(set-face-foreground 'org-scheduled-previously "firebrick")
+(set-face-foreground 'org-scheduled-today "limegreen")
