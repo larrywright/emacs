@@ -106,6 +106,7 @@
 
 (defvar twittering-username-face 'twittering-username-face)
 (defvar twittering-uri-face 'twittering-uri-face)
+(defvar twittering-time-face 'twittering-time-face)
 
 (defun twittering-get-or-generate-buffer (buffer)
   (if (bufferp buffer)
@@ -285,6 +286,9 @@
   (add-to-list 'minor-mode-alist '(twittering-icon-mode " tw-icon"))
   (add-to-list 'minor-mode-alist '(twittering-scroll-mode " tw-scroll"))
   (add-to-list 'minor-mode-alist '(twittering-jojo-mode " tw-jojo"))
+  (defface twittering-time-face
+    `((t nil)) "" :group 'faces)
+  (copy-face 'font-lock-string-face 'twittering-uri-face)
   )
 
 (defmacro case-string (str &rest clauses)
@@ -536,7 +540,7 @@
                (add-text-properties
                 0 (length time-string)
                 `(mouse-face highlight
-                             face twittering-uri-face
+                             face twittering-time-face
                              uri ,url)
                 time-string)
                (list-push time-string result))))

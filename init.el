@@ -9,8 +9,6 @@
 (load "config/global")
 (load "config/functions")
 (load "config/modes")
-(load "config/org")
-
 ;;(load "config/git")
 
 (vendor 'cheat)
@@ -26,7 +24,11 @@
 (vendor 'ruby-hacks)
 (vendor 'rhtml-mode)
 (textmate-mode)
+
 (load "config/theme")
 (load "config/jabber")
+(load "config/org")
+(load "config/twitter")
+
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/snippets")

@@ -14,5 +14,7 @@
         ("DONE"  . (:foreground "grey"))))
 (setq org-agenda-custom-commands
       '(("w" occur-tree "WAITING")("d" occur-tree "DELEGATED"))) ;; C-c a w/d will open an agenda with just waiting/delegated items respectively
-(set-face-foreground 'org-scheduled-previously "firebrick")
-(set-face-foreground 'org-scheduled-today "limegreen")
+(add-hook 'org-mode-hook '(lambda()
+                            (set-face-foreground 'org-scheduled-previously "firebrick")
+                            (set-face-foreground 'org-scheduled-today "limegreen")
+))
