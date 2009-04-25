@@ -1,0 +1,6 @@
+# -*- mode: rhtml; require-final-newline: nil; backup-inhibited: t -*-
+#name: <tbody></tbody>
+# --
+<tbody>
+  $0
+</tbody>
