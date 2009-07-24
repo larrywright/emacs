@@ -1,0 +1,4 @@
+# -*- mode: rhtml; require-final-newline: nil; backup-inhibited: t -*-
+#name: stylesheet_link_tag
+# --
+stylesheet_link_tag '${0:file}'
