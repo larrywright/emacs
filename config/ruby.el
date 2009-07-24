@@ -33,3 +33,4 @@
       (kill-buffer comp-buffer-name))))
 (ad-activate 'ruby-do-run-w/compilation)
 
+(add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))

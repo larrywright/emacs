@@ -23,6 +23,8 @@
 (vendor 'yasnippet)
 (vendor 'ruby-hacks)
 (vendor 'rhtml-mode)
+(vendor 'htmlize)
+(vendor 'haml-mode)
 (textmate-mode)
 
 (load "config/theme")
