@@ -1,6 +1,0 @@
-# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
-#name: assert_throws(..) { .. }
-# --
-assert_throws(:${1:expected}) do
-  $0
-end

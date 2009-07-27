@@ -1,6 +1,0 @@
-# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
-#name: assert_nothing_raised(..) { .. }
-# --
-assert_nothing_raised(${1:Exception}) do
-  $0
-end

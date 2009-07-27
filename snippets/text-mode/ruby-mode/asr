@@ -1,6 +1,0 @@
-# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
-#name: assert_raise(..) { .. }
-# --
-assert_raise(${1:Exception}) do
-  $0
-end
