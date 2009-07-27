@@ -25,6 +25,8 @@
 (vendor 'rhtml-mode)
 (vendor 'htmlize)
 (vendor 'haml-mode)
+(vendor 'sass-mode)
+
 (textmate-mode)
 
 (load "config/theme")
