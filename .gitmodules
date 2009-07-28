@@ -19,3 +19,9 @@
 [submodule "vendor/rhtml-mode"]
 	path = vendor/rhtml-mode
 	url = git://github.com/eschulte/rhtml.git
+[submodule "vendor/rinari/util/jump"]
+	path = vendor/rinari/util/jump
+	url = git://github.com/eschulte/jump.el.git
+[submodule "vendor/rinari/util/test/ert"]
+	path = vendor/rinari/util/test/ert
+	url = git://github.com/nex3/ert.git
