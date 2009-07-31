@@ -22,7 +22,7 @@
 (vendor 'jabber)
 (vendor 'yasnippet)
 (vendor 'ruby-hacks)
-(vendor 'rhtml-mode)
+;;(vendor 'rhtml-mode)
 (vendor 'htmlize)
 (vendor 'haml-mode)
 (vendor 'sass-mode)

@@ -1,5 +1,11 @@
 ;; Add rspec support to ruby-compilation
 
+;;
+;;  rspec will run with the -l <line_number> option, so that we can
+;;  run multiple tests in a context if that's where the point happens
+;;  to be.
+;;
+
 (require 'ruby-compilation)
 
 (add-hook 'ruby-mode-hook (lambda ()
@@ -7,7 +13,7 @@
                               (set (make-local-variable 'ruby-compilation-executable)
                                    "spec")
                               (set (make-local-variable 'ruby-compilation-test-name-flag)
-                                   "-e"))))
+                                   "-l"))))
 
 (fset 'ruby-compilation-this-test-name-old
       (symbol-function 'ruby-compilation-this-test-name))
@@ -18,9 +24,7 @@
     (ruby-compilation-this-test-name-old)))
     
 (defun ruby-compilation-this-spec-name ()
-  "Which test are we currently in?"
-  (save-excursion
-    (search-backward-regexp "\\(?:it\\|specify\\|example\\) [\"']\\(.*\\)[\"'] do")
-    (match-string 1)))
+  "Return the line number at point"
+  (number-to-string (line-number-at-pos)))
   
 (provide 'ruby-compilation-rspec)

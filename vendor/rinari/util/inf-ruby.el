@@ -6,8 +6,8 @@
 ;; URL: http://www.emacswiki.org/cgi-bin/wiki/RubyMode
 ;; Created: 8 April 1998
 ;; Keywords: languages ruby
-;; Version: 2.0
-;; Package-Requires: (("ruby-mode"))
+;; Version: 2.1
+;; Package-Requires: ((ruby-mode "1.1"))
 
 ;;; Commentary:
 ;;
@@ -186,7 +186,7 @@ run)."
     (run-ruby command impl)))
 
 ;;;###autoload
-(defun run-ruby (command &optional name)
+(defun run-ruby (&optional command name)
   "Run an inferior Ruby process, input and output via buffer *ruby*.
 If there is a process already running in `*ruby*', switch to that buffer.
 With argument, allows you to edit the command line (default is value
