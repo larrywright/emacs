@@ -14,7 +14,7 @@
 (setq ido-case-fold  t)
 (setq ido-enable-flex-matching t)
 ;;ignore some buffers
-(setq  ido-ignore-buffers  '("\\` " "^\*Mess" "^\*Back" "^\*scratch" ".*Completion" "^\*Ido" "*fsm-debug" "*twittering-http"))
+(setq  ido-ignore-buffers  '("\\` " "^\*Mess" "^\*Back" "^\*scratch" ".*Completion" "^\*Ido" "*fsm-debug" "*twittering-http" "*Calendar*"))
 
 
 ;; works in both aquamacs and carbon
