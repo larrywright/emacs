@@ -14,12 +14,11 @@
 (vendor 'cheat)
 (vendor 'magit)
 (vendor 'gist)
-(vendor 'twittering-mode)
 (vendor 'textile-mode)
 (vendor 'textmate)
 (vendor 'color-theme)
 (vendor 'vivid-chalk) 
-(vendor 'jabber)
+(vendor 'zenburn)
 (vendor 'yasnippet)
 (vendor 'ruby-hacks)
 ;;(vendor 'rhtml-mode)
@@ -30,9 +29,7 @@
 (textmate-mode)
 
 (load "config/theme")
-(load "config/jabber")
 (load "config/org")
-(load "config/twitter")
 
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/snippets")
