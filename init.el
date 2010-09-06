@@ -26,12 +26,11 @@
 (vendor 'sass-mode)
 (vendor 'xscheme)
 (vendor 'peep-open)
+(vendor 'rcodetools)
 (require 'peepopen)
 (textmate-mode)
-;(vendor 'cedet)
 (load-file "~/.emacs.d/vendor/cedet/common/cedet.el")
 (vendor 'ecb)
-;(require 'ecb-autoloads)
 (load "config/theme")
 (load "config/org")
 
