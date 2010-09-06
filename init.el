@@ -25,6 +25,8 @@
 (vendor 'haml-mode)
 (vendor 'sass-mode)
 (vendor 'xscheme)
+(vendor 'peep-open)
+(require 'peepopen)
 (textmate-mode)
 
 (load "config/theme")
@@ -32,3 +34,4 @@
 
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/snippets")
+
