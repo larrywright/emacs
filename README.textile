@@ -8,18 +8,18 @@ cd into ~/.emacs.d/
 
 Run the following commands:
 
-    git submodule init
-    git submodule update
+ git submodule init
+ git submodule update
 
 The rinari submodule in vendor/rinari has submodules of it's own, so we need to repeat the process:
 
-    cd vendor/rinari
-    git submodule init
-    git submodule update
+ cd vendor/rinari
+ git submodule init
+ git submodule update
 
 Finally, create a file called ~/.emacs and place the following two lines in it:
 
-         (add-to-list 'load-path "~/.emacs.d")
-          (load "~/.emacs.d/init.el")
+ (add-to-list 'load-path "~/.emacs.d")
+ (load "~/.emacs.d/init.el")
 
 You can put local configurations in config/custom.el. Any passwords should go in ~/.emacs.d/.passwords. Both of these files are ignored by Git.
