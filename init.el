@@ -27,11 +27,13 @@
 (vendor 'xscheme)
 (vendor 'peep-open)
 (vendor 'rcodetools)
+(vendor 'full-ack)
 (require 'peepopen)
 (textmate-mode)
 (load-file "~/.emacs.d/vendor/cedet/common/cedet.el")
 (vendor 'ecb)
 (load "config/theme")
+(load "config/full-ack")
 (load "config/org")
 
 (yas/initialize)

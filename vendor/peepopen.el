@@ -51,9 +51,8 @@
 ;;   (textmate-mode)
 
 ;; For Emacs 23 or Aquamacs, use this to open files in the existing frame:
-;;
-;;   (setq ns-pop-up-frames nil)
 
+   (setq ns-pop-up-frames nil)
 
 ;;;###autoload
 (defun peepopen-goto-file-gui ()
@@ -70,14 +69,15 @@
         (string-join " " *textmate-project-roots* )
         ")")))
     (shell-command-to-string
-     (format "open -a PeepOpen '%s'"
-             (expand-file-name root)))))
+     (format "open 'peepopen://%s?editor=%s'"
+             (expand-file-name root)
+             (invocation-name)))))
 
 ;;;###autoload
 (defun peepopen-bind-keys ()
   (cond ((featurep 'aquamacs) (peepopen-bind-aquamacs-keys))
-	((featurep 'mac-carbon) (peepopen-bind-carbon-keys))
-	((featurep 'ns) (peepopen-bind-ns-keys))))
+        ((featurep 'mac-carbon) (peepopen-bind-carbon-keys))
+        ((featurep 'ns) (peepopen-bind-ns-keys))))
 
 (defun peepopen-bind-aquamacs-keys ()
   ;; Need `osx-key-mode-map' to override
