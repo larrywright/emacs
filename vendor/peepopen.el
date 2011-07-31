@@ -51,8 +51,8 @@
 ;;   (textmate-mode)
 
 ;; For Emacs 23 or Aquamacs, use this to open files in the existing frame:
-
-   (setq ns-pop-up-frames nil)
+;;
+;;   (setq ns-pop-up-frames nil)
 
 ;;;###autoload
 (defun peepopen-goto-file-gui ()
