@@ -28,6 +28,7 @@
 (vendor 'peep-open)
 (vendor 'rcodetools)
 (vendor 'full-ack)
+(vendor 'markdown-mode)
 (require 'peepopen)
 (textmate-mode)
 ;(load-file "~/.emacs.d/vendor/cedet/common/cedet.el")
