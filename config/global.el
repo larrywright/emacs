@@ -20,4 +20,5 @@
 ;; works in both aquamacs and carbon
 (when (functionp 'tool-bar-mode)
   (tool-bar-mode -1))
-(scroll-bar-mode nil)
+;(scroll-bar-mode nil)
+(setq ns-pop-up-frames nil)
