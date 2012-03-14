@@ -29,6 +29,10 @@
 (vendor 'rcodetools)
 (vendor 'full-ack)
 (vendor 'markdown-mode)
+(vendor 'word-count)
+(global-set-key "\M-+" 'word-count-mode)
+
+
 (require 'peepopen)
 (textmate-mode)
 ;(load-file "~/.emacs.d/vendor/cedet/common/cedet.el")
@@ -36,7 +40,7 @@
 (load "config/theme")
 (load "config/full-ack")
 (load "config/org")
-
+(load "config/markdown")
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/snippets")
 
