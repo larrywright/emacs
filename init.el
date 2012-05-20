@@ -40,3 +40,5 @@
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/snippets")
 
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward-angle-brackets)
