@@ -7,5 +7,4 @@
 (load-file "~/.emacs.d/vendor/twilight-emacs/color-theme-twilight.el")
 (load-file "~/.emacs.d/vendor/zen-and-art.el")
 (load-file "~/.emacs.d/vendor/irblack.el")
-;(color-theme-zen-and-art)
 (color-theme-irblack)

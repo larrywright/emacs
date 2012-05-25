@@ -30,6 +30,8 @@
 (vendor 'full-ack)
 (vendor 'markdown-mode)
 (vendor 'word-count)
+(vendor 'wrap-region)
+(wrap-region-mode t)
 (global-set-key "\M-+" 'word-count-mode)
 
 
