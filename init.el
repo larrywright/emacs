@@ -29,6 +29,7 @@
 (vendor 'rcodetools)
 (vendor 'full-ack)
 (vendor 'markdown-mode)
+(vendor 'clojure-mode)
 (require 'peepopen)
 (textmate-mode)
 ;(load-file "~/.emacs.d/vendor/cedet/common/cedet.el")
