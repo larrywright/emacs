@@ -30,14 +30,19 @@
 (vendor 'full-ack)
 (vendor 'markdown-mode)
 (vendor 'clojure-mode)
+(vendor 'word-count)
+(vendor 'wrap-region)
+(wrap-region-mode t)
+(global-set-key "\M-+" 'word-count-mode)
+
+
 (require 'peepopen)
 (textmate-mode)
-;(load-file "~/.emacs.d/vendor/cedet/common/cedet.el")
-;(vendor 'ecb)
+
 (load "config/theme")
 (load "config/full-ack")
 (load "config/org")
-
+(load "config/markdown")
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/snippets")
 

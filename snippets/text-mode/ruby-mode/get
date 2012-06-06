@@ -1,0 +1,6 @@
+# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
+#name: get
+# --
+get '/${1:path}' do
+  $0
+end
