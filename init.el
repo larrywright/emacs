@@ -48,3 +48,11 @@
 
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
+(add-hook 'after-init-hook
+          #'(lambda ()
+              (setenv "PATH"
+                      (with-temp-buffer
+                        (call-process "/bin/bash"
+                                      nil (list (current-buffer) nil) nil
+                                      "-l" "-c" "printf %s \"$PATH\"")
+                        (buffer-string)))))
