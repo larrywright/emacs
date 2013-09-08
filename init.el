@@ -1,58 +1,43 @@
-(add-to-list 'load-path "~/.emacs.d/vendor")
+;;(add-to-list 'load-path "~/.emacs.d/vendor")
 
-; custom place to save customizations
-(setq custom-file "~/.emacs.d/config/custom.el")
-(load custom-file)
+(add-to-list 'load-path "~/.emacs.d/")
 
-(when (file-exists-p "~/.emacs.d/.passwords") (load "~/.emacs.d/.passwords"))
+;;TODO: make this conditional. If the package directory doesnt exist, do it. Else, should be manual
+(require 'my-packages) 
 
-(load "config/global")
-(load "config/functions")
-(load "config/modes")
-;;(load "config/git")
+(require 'color-theme)
+(require 'better-defaults)
+(require 'smex)
+(require 'ir-black-theme)
+(require 'nrepl)
+(require 'dash)
+(require 'clojure-mode)
+(require 'helm)
+(require 'helm-projectile)
+(require 'magit)
+(require 'smartparens)
+(require 'ack-and-a-half)
+(require 'ruby-mode)
+(require 'ssh)
+(require 'dash-at-point)
 
-(vendor 'cheat)
-(vendor 'magit)
-(vendor 'gist)
-(vendor 'textile-mode)
-(vendor 'textmate)
-(vendor 'color-theme)
-(vendor 'vivid-chalk) 
-(vendor 'zenburn)
-(vendor 'yasnippet)
-(vendor 'ruby-hacks)
-(vendor 'htmlize)
-(vendor 'haml-mode)
-(vendor 'sass-mode)
-(vendor 'xscheme)
-(vendor 'peep-open)
-(vendor 'rcodetools)
-(vendor 'full-ack)
-(vendor 'markdown-mode)
-(vendor 'clojure-mode)
-(vendor 'word-count)
-(vendor 'wrap-region)
-(wrap-region-mode t)
-(global-set-key "\M-+" 'word-count-mode)
+;; TODO Move these things into their own files
 
+(global-set-key "\C-cd" 'dash-at-point)
+(add-hook 'rinari-minor-mode-hook
+          (lambda () (setq dash-at-point-docset "rails")))
 
-(require 'peepopen)
-(textmate-mode)
+;;(color-theme-solarized-dark)
+(menu-bar-mode t) ;;overrides what is in better-defaults
 
-(load "config/theme")
-(load "config/full-ack")
-(load "config/org")
-(load "config/markdown")
-(yas/initialize)
-(yas/load-directory "~/.emacs.d/snippets")
+(global-set-key (kbd "M-x") 'smex) ; has to happen after ido-hacks-mode
 
-(require 'uniquify)
-(setq uniquify-buffer-name-style 'post-forward-angle-brackets)
-(add-hook 'after-init-hook
-          #'(lambda ()
-              (setenv "PATH"
-                      (with-temp-buffer
-                        (call-process "/bin/bash"
-                                      nil (list (current-buffer) nil) nil
-                                      "-l" "-c" "printf %s \"$PATH\"")
-                        (buffer-string)))))
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+(column-number-mode t)
+(setq inhibit-startup-message t)
+(put 'narrow-to-region 'disabled nil)
+
+;;always start a shell
+(shell)
+
