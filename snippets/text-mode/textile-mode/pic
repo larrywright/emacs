@@ -1,4 +1,0 @@
-# -*- mode: textile; require-final-newline: nil; backup-inhibited: t -*-
-#name: <img ...>
-# --
-!${1:pic url}(${2:alt text})!

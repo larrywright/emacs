@@ -1,4 +1,0 @@
-# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
-#name: should
-# --
-${1:actual}.should ${2:condition}$0

@@ -1,4 +1,0 @@
-# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
-#name : to_s
-# --
-to_s

@@ -1,7 +1,0 @@
-# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
-#name: setup method
-# --
-def setup
-  super
-  $0
-end

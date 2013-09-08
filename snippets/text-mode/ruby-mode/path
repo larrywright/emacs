@@ -1,4 +1,0 @@
-# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
-#name: named_path(args)
-# --
-${1:named}_path(${2:args...})

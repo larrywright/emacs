@@ -1,4 +1,0 @@
-# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
-#name: puts "DBG: ..."
-# --
-puts "DBG: $0"

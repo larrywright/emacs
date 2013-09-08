@@ -1,4 +1,0 @@
-# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
-#name: should_not have
-# --
-${1:actual}.should_not have(${2:number}).${3:names}

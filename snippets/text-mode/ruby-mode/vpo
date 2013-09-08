@@ -1,4 +1,0 @@
-# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
-#name: validates_presence_of
-# --
-validates_presence_of :${1:attribute}

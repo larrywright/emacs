@@ -1,6 +1,0 @@
-# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
-#name: before(:each)
-# --
-before(:each) do
-  $0
-end

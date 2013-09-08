@@ -1,4 +1,0 @@
-# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
-#name: should_not satisfy
-# --
-${1:actual}.should_not satisfy { |obj| ${2:code} }

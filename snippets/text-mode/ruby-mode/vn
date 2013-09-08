@@ -1,4 +1,0 @@
-# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
-#name: validates_numericality_of
-# --
-validates_numericality_of :${1:attribute}, :only_integer => :${2:false}

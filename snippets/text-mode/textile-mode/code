@@ -1,5 +1,0 @@
-# -*- mode: textile; require-final-newline: nil; backup-inhibited: t -*-
-#name: <pre><code>...</code></pre>
-# --
-<pre><code>${1:text}
-</code></pre>

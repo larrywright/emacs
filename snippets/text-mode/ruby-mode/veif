@@ -1,4 +1,0 @@
-# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
-#name: validates_exclusion_of if
-# --
-validates_exclusion_of :${1:attribute}, :in => ${3:enumerable}, :on => :${4:create}, :message => "${5:is not allowed}", :if => proc { |obj| ${6:obj.condition?} }

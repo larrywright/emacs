@@ -1,4 +1,0 @@
-# -*- mode: textile; require-final-newline: nil; backup-inhibited: t -*-
-#name: p(((. <em>quoted text</em>
-# --
-p(((. <em>${1:quoted text}</em>

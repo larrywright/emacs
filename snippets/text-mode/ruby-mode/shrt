@@ -1,4 +1,0 @@
-# -*- mode: ruby; require-final-newline: nil; backup-inhibited: t -*-
-#name: should respond_to
-# --
-${1:actual}.should respond_to(${2:names})
