@@ -4,3 +4,7 @@
 config/custom.el
 *.elc
 tramp
+elpa/
+eshell/
+places
+url/
